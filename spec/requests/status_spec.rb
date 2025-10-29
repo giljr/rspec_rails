@@ -9,6 +9,6 @@ RSpec.describe 'Status requests', type: :request do
 
       # json = JSON.parse(response.body)
       expect(response_json['status']).to eql('ok')
-    end 
+    end
   end
 end
