@@ -17,6 +17,8 @@ class ConsolesController < ApplicationController
       end
     end
 
-    render(json: { 'consoles' => consoles.map { |console| console[:name] } })
+    # using Ruby 3 shorthand (_1):
+    render(json: { 'consoles' => consoles.map { _1[:name] } })
+    # render(json: { 'consoles' => consoles.map { |console| console[:name] } })
   end
 end
