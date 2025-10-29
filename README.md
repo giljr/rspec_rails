@@ -31,7 +31,7 @@ It’s designed to help developers confidently work with APIs and ensure their r
 
 1. **Clone the repository**:
    ```bash
-   git@github.com:giljr/rspec_rails.git
+   git clone git@github.com:giljr/rspec_rails.git
    cd rspec_rails
    ```
 2. **Install dependencies**:
@@ -39,10 +39,24 @@ It’s designed to help developers confidently work with APIs and ensure their r
 ```bash
 bundle install
 ```
-2. **Run tests**:
+3. **Run tests**:
 
 ```bash
-bin/rspec
+bin/rspec -f d
+```
+4. You should now see **all tests passing** cleanly:
+```rspec
+Consoles requests
+  GET /consoles
+    returns an array of video games consoles
+    supports specifying consoles for a specific manufacturer
+
+Status requests
+  GET /status
+    returns a status message
+
+Finished in 0.07247 seconds (files took 0.77991 seconds to load)
+3 examples, 0 failures
 ```
 ## Credits
 This project is __inspired by__ and credits:
