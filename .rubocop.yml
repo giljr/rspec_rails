@@ -16,3 +16,12 @@ Style/StringLiterals:
     - "lib/**/*"
     - "test/**/*"
     - "Gemfile"
+
+# === Layout Rules ===
+# Allow up to 120 characters per line.
+# Ignore comment lines when enforcing line length.
+Layout/LineLength:
+  Max: 120
+  IgnoredPatterns:
+    - '^#'
+

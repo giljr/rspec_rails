@@ -6,9 +6,13 @@
 
 # Ignore bundler config.
 /.bundle
+/vendor/bundle/
+/vendor/cache/
+Gemfile.lock
 
 # Ignore all environment files.
 /.env*
+.env
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -32,3 +36,23 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# RSpec artifacts
+/spec/examples.txt
+/.rspec_status
+/coverage/
+
+# Build and executable files
+/bin/
+/pkg/
+
+# Logs and temp files
+/log/
+*.log
+
+# Editor and OS files
+.vscode/
+.idea/
+*.sw?
+.DS_Store
+Thumbs.db
